@@ -32,75 +32,90 @@
 	</div>
 
   <style>
-    body {
-      margin: 40px;
-    }
+		.hypColor{
+			color: rgb(1, 253, 55) !important;
+		}
+		.image{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+		}
+		body {
+			margin: 40px;
+		}
 
-    .sidebar {
-      grid-area: sidebar;
-    }
+		.sidebar {
+			grid-area: sidebar;
+		}
 
-    .content {
-      grid-area: content;
-      position: relative;
-    }
+		.content {
+			grid-area: content;
+			position: relative;
+		}
 
-    .header {
-      grid-area: header;
-    }
+		.header {
+			grid-area: header;
+		}
 
-    .footer {
-      grid-area: footer;
-    }
+		.footer {
+			grid-area: footer;
+		}
+		.links {
+			grid-area: links;
+		}
 
-    .wrapper {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-areas:
-        "header  header  header"
-        "sidebar content content"
-        "footer  footer  footer";
-        background-color: #fff;
-        color: #444;
-      }
+		.wrapper {
+			display: grid;
+			grid-gap: 10px;
+			margin: 0 auto;
+			grid-template-columns: 1fr 3fr;
+			padding-left: 10%;
+			padding-right: 10%;
+			grid-template-areas:
+			"header  header  links"
+			"content content content"
+			"footer  footer  footer";
+			background-color: #fff;
+			color: #444;
+		}
 
+		.box {
+			background-color: #444;
+			color: #fff;
+			border-radius: 5px;
+			padding: 50px;
+			font-size: 150%;
+		}
 
-    .box {
-      background-color: #444;
-      color: #fff;
-      border-radius: 5px;
-      padding: 50px;
-      font-size: 150%;
-    }
+		.header,
+		.footer {
+			background-color: #999;
+		}
 
-    .header,
-    .footer {
-      background-color: #999;
-    }
+		.topleft {
+			position: relative;
+			object-fit: cover;
+			width: 500px;
+			height: 50px;
+		}
 
-    .topleft {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+		.topright {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 
-    .topright {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+		.bottomleft {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
 
-    .bottomleft {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    .bottomright {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
+		.bottomright {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
   </style>
 </html>
