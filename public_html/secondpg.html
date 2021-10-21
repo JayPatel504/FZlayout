@@ -55,14 +55,25 @@
 	</div>
 
   <style>
+		.text{
+			font-family: 'Times New Roman', Times, serif;
+			font-size:30pt;
+	
+		}
+		.row{
+			height: 25%;
+		}
 		.hypColor{
 			color: rgb(1, 253, 55) !important;
 		}
 		.image{
 			display: block;
 			margin-left: auto;
+			height: 70%;
+			width: 70%;
 			margin-right: auto;
 			position: relative;
+
 		}
 		body {
 			margin: 40px;
@@ -73,8 +84,11 @@
 		}
 
 		.content {
+			padding-top: 10%;
 			grid-area: content;
 			position: relative;
+			background-color: #444;
+			color: #fff;
 		}
 
 		.header {
@@ -97,11 +111,12 @@
 			padding-right: 10%;
 			grid-template-areas:
 			"header  header  links"
-			"content content content"
+			"sidebar sidebar content"
 			"footer  footer  footer";
 			background-color: #fff;
 			color: #444;
 		}
+
 
 		.box {
 			background-color: #444;
@@ -121,6 +136,7 @@
 			object-fit: cover;
 			width: 500px;
 			height: 50px;
+
 		}
 
 		.topright {
